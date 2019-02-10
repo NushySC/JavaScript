@@ -1,0 +1,9 @@
+.buttons {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+}
+
+#number {
+    border: solid black 0.5em;
+    width: 17em;
+}

@@ -9,7 +9,7 @@ let balance3 = 78065;
 let balance4 = 120910;
 
 let userAccount = prompt('Your account number:');
-let userAction = prompt('Youe action:')
+let userAction = prompt('Your action:')
 
 if(userAction === 'balance') {
   let userBalance = null;
@@ -42,5 +42,5 @@ if(userAction === 'balance') {
     balance4 -= amount;
   }
 } else {
-  alert('Uknown action. Are you stupid?')
+  alert('Unknown action')
 }

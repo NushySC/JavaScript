@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Banking Practice</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1>Tuesday Practice</h1>
+
+    <h2>Exercise 1:</h2>
+    <p>
+        Let your salary as a programmer by 20€ per hour. Using the Node.js command line compute your monthly salary if
+        you work 8 hours a day 21 dayes a month.
+        What is your salary after 25% taxing?
+    </p>
+
+    <figure>
+
+        <pre><code>
+
+        // Calculates bruto and neto salaries and shows an alert
+        
+        const wage = 20;
+        const hours = 8;
+        const days = 21;
+        const tax = 0.25;
+        
+        function calcNeto() {
+            return wage * hours * days * (1-tax);
+        }
+        
+        function calcBruto() {
+            return wage * hours * days;
+        }
+        
+        const neto = calcNeto();
+        const bruto = calcBruto();
+        
+        function tellSalary () {
+            alert("Your neto salary is " + neto);
+            alert("Your neto salary is " + bruto);
+        }
+        
+        tellSalary();
+</pre><code>
+
+    </figure>
+
+    <br>
+
+
+
+    <h2>Exercise 2</h2>
+    <p>
+        This week you worked 9 hours on monday, 7 hours on tuesday, 5.5 hours on wednesday, 6 hours on thurseday and 2
+        hours on friday. How many hours did your work on average per day?
+        Construct a string which will say something like 'Your avarge salary is: 2500 euro'. Put your actual result
+        into the message.
+    </p>
+
+    <figure>
+        <pre><code>
+
+// Average
+
+const monday  = 9;
+const tuesday = 7;
+const wednesday = 5.5;
+const thrusday = 6;
+const friday = 2;
+
+
+function averageTime() {
+    return (monday + tuesday + wednesday + thrusday + friday) / 2;
+}
+
+const averageDay = averageTime();
+
+function tellMeDay() {
+    alert ("You have worked an average of " + averageDay + "this week.");
+}
+
+tellMeDay();
+
+</pre><code>
+
+    </figure>
+
+    <h2>Exercise 3</h2>
+    <p>
+        Round your computed salary from previous exerices to the nearest euro.
+        Compute two salaries, first one working 8 hours a day 21 days a month with tax 25% stored in variable salary1,
+        and second one working 6 ours a day for 26 days a month with tax 20% stored in salary2. Use function Math.max()
+        to tell you which salary is better.
+
+    </p>
+
+    <figure>
+        <pre><code>
+                    const wage = 20;
+                    const hours = 8;
+                    const days = 21;
+                    const tax = 0.25;
+                    
+                    function calcSalary1() {
+                        return wage * hours * days * (1-tax);
+                    }
+                    
+                    const wage2 = 20;
+                    const hours2 = 6;
+                    const days2 = 26;
+                    const tax2 = 0.20;
+                    
+                    function calcSalary2() {
+                        return wage2 * hours2 * days2 * (1-tax2);
+                    }
+                    
+                    const salary1 = calcSalary1();
+                    const salary2 = calcSalary2();
+                    
+                    function bestSalary() {
+                        if (salary1 >salary2) {
+                            alert("You better work 21 days a month");
+                        } else {
+                            alert("You better get the lowest tax posible");
+                        }
+                    }
+                    
+                    bestSalary();
+                    
+                    
+                    Math.max(salary1, salary2);
+
+            </pre><code>
+
+
+
+            <h2>Exercise 4</h2>
+            <p>Figure out how to simulate a dice roll with Math.random(). Beware that this functions returns random
+                floating point numbers between 0 and 1 but we want to have integers between 1 and 6. Thus, you have to
+                unleash some maths and rounding to the result of Math.random() to produce the desired result.</p>
+
+            <figure>
+                <pre><code>
+
+            function rollDice() {
+                return Math.round (Math.random() * 5) + 1;
+            }
+            
+            const roll = rollDice();
+            
+            function myDice() {
+                alert("You got " + roll );
+            }
+            
+            myDice();
+
+    </pre><code>
+
+            </figure>
+
+            <script src="index.js" async defer></script>
+</body>
+
+</html>

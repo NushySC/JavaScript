@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice {    
+    width: 100px;
+    height: 100px;
+}
+
+.face1 {
+    background-image: url('img/side1.png');
+    background-size: cover;
+}
+
+.face2 {
+    background-image: url('img/side2.png');
+    background-size: cover;
+}
+
+.face3 {
+    background-image: url('img/side3.png');
+    background-size: cover;
+}
+
+.face4 {
+    background-image: url('img/side4.png');
+    background-size: cover;
+}
+
+.face5 {
+    background-image: url('img/side5.png');
+    background-size: cover;
+}
+
+.face6 {
+    background-image: url('img/side6.png');
+    background-size: cover;
+}

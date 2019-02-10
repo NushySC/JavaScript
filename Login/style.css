@@ -1,0 +1,12 @@
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+
+}
+
+.submit {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    font-size: 2em;
+    margin: 1em;
+}
