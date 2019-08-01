@@ -1,0 +1,10 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map {
+    width: 500px;
+    height: 500px;
+}
